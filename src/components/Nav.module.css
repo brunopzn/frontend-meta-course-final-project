@@ -1,3 +1,8 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
 .navbar ul {
     display: flex;
     list-style: none;
@@ -15,3 +20,56 @@
     color: var(--primary-colors);
 }
 
+.hamburguerBtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Tablets */
+@media (max-width: 992px) {
+
+}
+
+/* Celulares */
+@media (max-width: 620px) {
+.navbar {
+    position: relative; /* Referência para o menu absoluto */
+    display: flex;
+    align-items: center;
+  }
+
+  /* Esta é a div ou ul que contém os links quando o menu está ABERTO */
+  .navbarMobile ul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+    position: absolute; 
+    top: 100%;
+    right: -2rem;      
+    width: 200px;   
+    z-index: 1000;  
+    margin-top: 0;  
+    font-size: large;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .navbarMobileHide {
+    display: none;
+  }
+
+  .hamburguerBtn {
+    display: flex;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative; 
+    z-index: 1100;
+    right: 3rem;
+  }
+}
