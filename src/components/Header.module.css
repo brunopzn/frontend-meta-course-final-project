@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.75rem;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.header .container{
+    width: 860px;
+    max-width: 860px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+}

@@ -1,0 +1,25 @@
+:root {
+	--primary-colors: #f4ce14;
+	--primary-color-2: #495e57;
+	--secondary-color: #ee9972;
+	--secondary-color-2: #fdbabb;
+	--secondary-color-3: #edefee;
+	--secondary-color-4: #333;
+  --font-family: "Karla", sans-serif;
+  --second-family: "Markazi Text", serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: (var(--font-family));
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+

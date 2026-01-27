@@ -1,0 +1,17 @@
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.navbar .link {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 0.9em;
+    color: black;
+}
+
+.navbar .link:hover {
+    color: var(--primary-colors);
+}
+
