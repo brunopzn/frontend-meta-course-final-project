@@ -1,0 +1,77 @@
+.hightlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    width: 53rem;
+    max-width: 53rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 715px;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.TitleAndBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.btnHigh {
+    border-radius: 16px;
+    width: 200px;
+    height: 60px;
+    background: #000;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    color: var(--primary-colors);
+    border: none;
+}
+
+.btnHigh:hover{
+    background-color: var(--primary-colors);
+    color: #000000;
+    cursor: pointer;
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    box-shadow: 
+  10px 0 15px -3px rgba(0, 0, 0, 0.2), 
+  25px 0 35px -10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 992px) {
+    .container {
+        height: auto;
+        padding-top: 2rem;
+    }
+.TitleAndBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+}
+
+/* Celulares */
+@media (max-width: 620px) {
+   
+}
