@@ -1,0 +1,125 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.aboutContainer {
+    width: 100%;
+    width: 53rem;
+    max-width: 53rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 576px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 2rem;
+}
+
+.titleAndDescriptonBox {
+    max-width: 373px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.imgBox {
+    display: flex;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstImg {
+    height: 250px;
+}
+
+.secondImg {
+    height: 250px;
+    display: flex;
+    position: absolute;
+    left: -60px;
+}
+
+
+.firstImgBox {
+    border: 1px solid #000;
+    border-radius: 16px;
+    width: 12.5rem;
+    height: 15.625rem;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 200px;
+    z-index: 99;
+}
+
+.secondImgBox {
+    border: 1px solid #000;
+    border-radius: 16px;
+    width: 12.5rem;
+    height: 15.625rem;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 64px;
+    color: #000;
+    line-height: 15px;
+}
+
+.subTitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--secondary-color-4);
+}
+
+.description {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: justify;
+    color: #000;
+    margin-top: 1rem;
+    line-height: 30px;
+}
+
+@media (max-width: 992px) {
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .secondImgBox {
+        position: absolute;
+        top: 100px;
+        right: 250px;
+    }
+
+    .firstImgBox {
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        z-index: 99;
+    }
+}
+
+/* Celulares */
+@media (max-width: 620px) {}
