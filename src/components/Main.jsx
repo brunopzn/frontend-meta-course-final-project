@@ -1,4 +1,5 @@
 import About from "./About";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import Hightlights from "./Hightlights";
 import Testimonials from "./Testimonials";

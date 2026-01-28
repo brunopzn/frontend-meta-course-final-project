@@ -1,7 +1,13 @@
+import style from './Footer.module.css'
+import MarioandAdrianA from '../assets/MarioandAdrianA.jpg'
+
 function Footer() {
     return (
-        <footer>
-            <div className="footerNavigation">
+        <footer className={style.footer}>
+            <div className={style.imgDiv}>
+                    <img className={style.img} src={MarioandAdrianA} alt="Imagem footer" />
+            </div>
+            <div className={style.footerNavigation}>
                 <h3>
                     Navigation
                 </h3>
@@ -40,7 +46,7 @@ function Footer() {
 
             </div>
 
-            <div className="footerContact">
+            <div className={style.footerContact}>
                 <h3>
                     Contact
                 </h3>
@@ -64,7 +70,7 @@ function Footer() {
 
             </div>
 
-            <div className="footerSocialMedia">
+            <div className={style.footerSocialMedia}>
                 <h3>
                     Social Media
                 </h3>
