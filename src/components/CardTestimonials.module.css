@@ -1,0 +1,49 @@
+.cardTestimonials {
+    border-radius: 16px;
+    width: 200px;
+    height: 175px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.imgAndName {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.rating,
+.name {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+
+}
+.name {
+    padding-left: 0.5rem;
+}
+
+.rating {
+    padding-left: 1.4rem;
+}
+
+.review {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    padding-left: 1.4rem;
+}
+
+.img {
+    width: 47px;
+    height: 46px;
+}
+
+.reviewDiv {
+    max-width: 190px;
+}
