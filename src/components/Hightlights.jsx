@@ -4,6 +4,7 @@ import greekSalad from '../assets/greeksalad.jpg'
 import bikeIcon from '../assets/bikeIcon.svg'
 import bruchetta from '../assets/bruchetta.svg'
 import lemon from '../assets/lemondessert.jpg'
+import { Link } from 'react-router-dom';
 
 function Hightlights() {
     return (
@@ -11,12 +12,12 @@ function Hightlights() {
             <div className={style.container}>
                 <div className={style.TitleAndBtn}>
                     <h1>This Week Specials!</h1>
-                    <button className={style.btnHigh}>Online Menu</button>
+                    <Link to='menu'><button className={style.btnHigh}>Online Menu</button></Link>
                 </div>
                 <div className={style.cardsContainer}>
                     <Card  title="Greek salad" price='$12.99' imgUrl={greekSalad}
                         description="Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. "
-                        bottomImg={bikeIcon} btn='Order a delivery' />
+                        bottomImg={bikeIcon} btn='Order a delivery' url={'/'} />
 
                         <Card title="Bruchetta" price='$5.99' imgUrl={bruchetta}
                         description="The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. "

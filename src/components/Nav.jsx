@@ -1,6 +1,7 @@
 import styles from './Nav.module.css'
 import hamburger from '../assets/hamburgerIcon.svg'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     const [menuAberto, setMenuAberto] = useState(false)
@@ -15,34 +16,34 @@ function Nav() {
             <div className={menuAberto ? styles.navbarMobile : styles.navbarMobileHide}>
                 <ul>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <Link to='/' className={styles.link}>
                             HOME
-                        </a>
+                        </Link> 
                     </li>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <Link to='/about' className={styles.link}>
                             ABOUT
-                        </a>
+                        </Link> 
                     </li>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <Link to='/menu' className={styles.link}>
                             MENU
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <Link to='/reserve' className={styles.link}>
                             RESERVATIONS
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <Link to='/orderonline' className={styles.link}>
                             ORDER ONLINE
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <Link to='/login' className={styles.link}>
                             LOGIN
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

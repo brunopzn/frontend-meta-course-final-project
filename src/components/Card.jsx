@@ -1,6 +1,6 @@
 import style from './Card.module.css'
 
-function Card({imgUrl, title ,price, btn , bottomImg, description,children}) {
+function Card({imgUrl, title ,price, btn , bottomImg, description, url,children}) {
     return (
         <div className={style.cardContainer}>
             <img className={style.img} src={imgUrl} alt="Food Image" /> 
