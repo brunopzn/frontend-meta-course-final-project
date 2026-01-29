@@ -31,7 +31,7 @@ function Nav() {
                         </Link>
                     </li>
                     <li>
-                        <Link to='/reserve' className={styles.link}>
+                        <Link to='/Booking' className={styles.link}>
                             RESERVATIONS
                         </Link>
                     </li>

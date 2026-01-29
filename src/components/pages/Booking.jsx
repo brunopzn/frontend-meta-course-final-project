@@ -3,7 +3,7 @@ import Footer from '../Footer';
 import Header from '../Header';
 
 
-function Reserve() {
+function Booking() {
     return (
         <>
         <Header />
@@ -13,4 +13,4 @@ function Reserve() {
     )
 }
 
-export default Reserve;
+export default Booking;

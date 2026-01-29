@@ -1,0 +1,30 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 4rem 0;
+}
+
+.btnDiv {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border-radius: 16px;
+    width: 200px;
+    height: 40px;
+    background: #000;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    color: var(--primary-colors);
+    border: none;
+}
+
+.btn:hover{
+    background-color: var(--primary-colors);
+    color: #000000;
+    cursor: pointer;
+}

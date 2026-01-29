@@ -1,11 +1,11 @@
 import style from './Footer.module.css'
-import MarioandAdrianA from '../assets/MarioandAdrianA.jpg'
+import logo from '../assets/logo.svg'
 
 function Footer() {
     return (
         <footer className={style.footer}>
             <div className={style.imgDiv}>
-                    <img className={style.img} src={MarioandAdrianA} alt="Imagem footer" />
+                    <img className={style.img} src={logo} alt="Imagem footer" />
             </div>
             <div className={style.footerNavigation}>
                 <h3>
