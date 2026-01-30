@@ -6,6 +6,7 @@ function About() {
         <section className={style.about}>
             <div className={style.aboutContainer}>
                 <div className={style.titleAndDescriptonBox}>
+                    <h1 style={{fontFamily: 'var(--font-family)', fontSize: '3rem'}}>About</h1><br/>
                     <h1 className={style.title}>
                         Little Lemon
                     </h1>

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -14,9 +13,9 @@
     justify-content: center;
     align-items: center;
     height: 576px;
-    padding-top: 1rem;
     padding-bottom: 1rem;
     gap: 2rem;
+    
 }
 
 .titleAndDescriptonBox {

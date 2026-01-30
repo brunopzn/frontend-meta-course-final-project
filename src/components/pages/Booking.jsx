@@ -51,12 +51,13 @@ function Booking({ availableTimes, reservations, dispatch }) {
         }
 
     }
-
+        const isFormInvalid = !date || time === "" || time === "00:00";
     return (
         <>
             <Header />
             <section className={style.booking}>
                 <div className={style.formBox}>
+                    <h1 style={{fontFamily: 'var(--font-family)'}}>Make Your Reservation</h1><br/>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="res-date">Choose date</label>
                         <input type="date" id="res-date" value={date} onChange={handleChangeDate} />
@@ -78,7 +79,7 @@ function Booking({ availableTimes, reservations, dispatch }) {
                             <option>Anniversary</option>
                         </select>
 
-                        <input className={style.submit} type="submit" value="Make Your reservation" />
+                        <input disabled={isFormInvalid} className={style.submit} type="submit" value="Make Your Reservation" />
                     </form>
                     <h1 className={style.avaliableTimesH1}>Available Times</h1>
                     <div className={style.disponibleHours}>
