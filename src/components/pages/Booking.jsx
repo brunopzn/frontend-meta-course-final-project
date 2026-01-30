@@ -89,9 +89,9 @@ function Booking({ availableTimes, reservations, dispatch }) {
                 </div>
                 <div className={style.reservationsList}>
                     <h3>Registered Reservations:</h3>
-                    {reservations.length === 0 ? <p>No reservations made.</p> : (
+                    {reservations?.length === 0 ? <p>No reservations made.</p> : (
                         <ul>
-                            {reservations.map((res, index) => (
+                            {reservations?.map((res, index) => (
                                 <li key={index}>
                                     <div className={style.reservationsDiv}><h4>Data: </h4>{res.date}</div> <div className={style.reservationsDiv}><h4>Time: </h4> {res.time}</div> <div className={style.reservationsDiv}><h4>Guests: </h4> {res.guests}</div> <div className={style.reservationsDiv}><h4>Occasion: </h4>  ({res.occasion})</div>
                                 </li>

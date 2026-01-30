@@ -1,6 +1,6 @@
 
 import './App.css'
-import { useReducer } from 'react';
+import { useReducer, useEffect, useState, use } from 'react';
 import { Route, Routes } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import Confirmation from './components/pages/Confirmation';
@@ -11,12 +11,13 @@ import Login from './components/pages/Login';
 import Booking from './components/pages/Booking';
 
 
-const initializeTimes = () => ({
+
+export const initializeTimes = () => ({
   availableTimes: ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"],
   reservations: [] 
 });
 
-const updateTimes = (state, action) => {
+export const updateTimes = (state, action) => {
   switch (action.type) {
     case 'updateTime':
       return initializeTimes();

@@ -16,32 +16,32 @@ function Nav() {
             <div className={menuAberto ? styles.navbarMobile : styles.navbarMobileHide}>
                 <ul>
                     <li>
-                        <Link to='/' className={styles.link}>
+                        <Link to='/' aria-current="page" className={styles.link}>
                             HOME
                         </Link> 
                     </li>
                     <li>
-                        <Link to='/about' className={styles.link}>
+                        <Link to='/about' aria-current="page" className={styles.link}>
                             ABOUT
                         </Link> 
                     </li>
                     <li>
-                        <Link to='/menu' className={styles.link}>
+                        <Link to='/menu' aria-current="page" className={styles.link}>
                             MENU
                         </Link>
                     </li>
                     <li>
-                        <Link to='/Booking' className={styles.link}>
+                        <Link to='/Booking' aria-current="page" className={styles.link}>
                             RESERVATIONS
                         </Link>
                     </li>
                     <li>
-                        <Link to='/orderonline' className={styles.link}>
+                        <Link to='/orderonline'aria-current="page"  className={styles.link}>
                             ORDER ONLINE
                         </Link>
                     </li>
                     <li>
-                        <Link to='/login' className={styles.link}>
+                        <Link to='/login' aria-current="page" className={styles.link}>
                             LOGIN
                         </Link>
                     </li>
