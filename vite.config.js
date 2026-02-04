@@ -7,5 +7,5 @@ export default defineConfig({
   test:{
   globals: true,
   environment:"jsdom"},
-  base: 'frontend-meta-course-final-project',
+  base: '/frontend-meta-course-final-project',
 })
